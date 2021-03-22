@@ -16,6 +16,7 @@ while flag == 'да':
         flag = input('Ты хочешь задать еще вопрос? (да/нет) \n').lower()
         if flag == 'нет':
             print('Возвращайся если возникнут вопросы!')
+            input('нажми Enter для выхода: ')
             break
         elif flag == 'да':
             flag1 = False
