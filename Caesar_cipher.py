@@ -60,3 +60,9 @@ language = input('Введите язык шифра: \n(1 - русский, 2 -
 text = input('Введите текст для шифвровки или дешифровки: \n')
 
 print(chipher(text, step, direction))
+
+# перебор всех возможных комбинаций зашифрованных методом Цезаря
+# out = []
+# for i in range(2, 26):
+#     out += f'{i}:' + chipher(text, i, direction) + '\n'
+# print(*out, sep="")
