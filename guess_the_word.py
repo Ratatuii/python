@@ -127,7 +127,8 @@ def play():
         if not word_input.isalpha():
             print('Вы ввели что-то не то, попробуйте ввести русскую букву.')
             continue
-        if word_input.isalpha() in 
+        if word_input.isalpha() in guessed_letters or word_input.isalpha() in guessed_words:
+            pass # 
         guessed_letters.append(word_input)
         print(guessed_letters)
 
