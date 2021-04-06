@@ -123,12 +123,12 @@ def play():
     print(f'Слово состоит из {word_completion} букв')
 
     while True:
-        word_input() = input('Введите букву: \n').upper()
-        if not letter.isalpha():
+        word_input = input('Введите букву: \n').upper()
+        if not word_input.isalpha():
             print('Вы ввели что-то не то, попробуйте ввести русскую букву.')
             continue
-        if letter.isalpha() in 
-        guessed_letters.append(letter)
+        if word_input.isalpha() in 
+        guessed_letters.append(word_input)
         print(guessed_letters)
 
 # функция получения текущего состояния
