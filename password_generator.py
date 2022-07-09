@@ -1,8 +1,9 @@
 from random import *
 
+
 def generate_password(len_passwd, chars):
-    
     return sample(chars, len_passwd)
+
 
 digits = '0123456789'
 lowercase_letters = 'abcdefghijklmnopqrstuvwxyz'
@@ -27,7 +28,7 @@ if upp_str_passwd == 'да':
 if low_str_passwd == 'да':
     chars += lowercase_letters
 if char_passwd == 'да':
-    chars += punctuation 
+    chars += punctuation
 if except_passwd == 'да':
     for i in chars:
         if i in 'il1Lo0O':
