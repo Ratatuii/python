@@ -1,4 +1,3 @@
-
 def chipher(text, step, direction):
     eng_lower_alphabet = 'abcdefghijklmnopqrstuvwxyz'
     eng_upper_alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -54,14 +53,15 @@ def chipher(text, step, direction):
                 result += text[i]
     return result
 
+
 direction = input('Введите направление: \n(1 - шифрование, 2 - дешифрование: )\n')
-step = int(input('Введите шаг сдвига: \n (от 1 до n) \n'))
+step = int(input('Введите шаг сдвига: \n (от 1 до 26 для англ. языка и до 36 для рус. языка) \n'))
 language = input('Введите язык шифра: \n(1 - русский, 2 - английский) \n')
-text = input('Введите текст для шифвровки или дешифровки: \n')
+text = input('Введите текст для шифровки или дешифровки: \n')
 
 print(chipher(text, step, direction))
 
-# перебор всех возможных комбинаций зашифрованных методом Цезаря
+# перебор всех возможных комбинаций зашифрованных методом Цезаря на англ. языке
 # out = []
 # for i in range(2, 26):
 #     out += f'{i}:' + chipher(text, i, direction) + '\n'
